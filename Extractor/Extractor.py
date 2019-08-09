@@ -20,7 +20,7 @@ class Extractor:
       self.KeyWordsFile = open(r"C:\ExtractIt\KeyWords.txt")
       self.RawTextFile = open(r"C:\ExtractIt\raw_data.txt")
     except FileNotFoundError:
-      print("We could not find the required Files in the C:\ExtractIt\ directory, so you can mention the whole path of the raw_data and KeyWords file here. Please do keep both of them in the same directory in .txt format and then give the path of the directory. I can wait")
+      print("We could not find the required Files(KeyWords.txt and raw_data.txt) in the C:\ExtractIt\ directory, so you can mention the whole path of the raw_data and KeyWords file here. Please do keep both of them in the same directory in .txt format and then give the path of the directory. I can wait")
       basePath = input("Enter directory path : ")
       self.KeyWordsFile = open(basePath + r"\KeyWords.txt")
       self.RawTextFile = open(basePath + r"\raw_data.txt")
