@@ -43,7 +43,7 @@ class Extractor:
     for sentence in self.Data:
       for word in word_tokenize(sentence):
         if sno.stem(word) in self.MetaData:
-          self.ExtractedData[sentence] = self.MetaData[sno.stem(word)]
+          self.ExtractedData[sentence] = self.MetaData[sno.stem(word)] + "--->" + word
   
   def output(self):
     all_tuples = []
